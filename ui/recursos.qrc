@@ -1,30 +1,32 @@
 <RCC>
-  <qresource prefix="/imgs">
-    <file>../recursos/imagenes/cargando.gif</file>
+  <qresource prefix="imgs">
     <file>../recursos/imagenes/about.png</file>
-    <file>../recursos/imagenes/anex_imgs.png</file>
     <file>../recursos/imagenes/add_imgs.png</file>
-    <file>../recursos/imagenes/help.png</file>
+    <file>../recursos/imagenes/anex_imgs.png</file>
     <file>../recursos/imagenes/brithness.png</file>
+    <file>../recursos/imagenes/cargando.gif</file>
     <file>../recursos/imagenes/clean_swap.png</file>
     <file>../recursos/imagenes/delete_img_02.png</file>
     <file>../recursos/imagenes/delete_img.png</file>
     <file>../recursos/imagenes/deshacer.png</file>
     <file>../recursos/imagenes/exit.png</file>
+    <file>../recursos/imagenes/help.png</file>
     <file>../recursos/imagenes/minimizar.png</file>
     <file>../recursos/imagenes/open_imgs.png</file>
-    <file>../recursos/imagenes/rehacer.png</file>
     <file>../recursos/imagenes/open_project_dlx.png</file>
+    <file>../recursos/imagenes/rehacer.png</file>
     <file>../recursos/imagenes/save_all_img.png</file>
     <file>../recursos/imagenes/save_all_pdf.png</file>
     <file>../recursos/imagenes/save_img.png</file>
     <file>../recursos/imagenes/save_one_pdf.png</file>
     <file>../recursos/imagenes/save_project.png</file>
+    <file>../recursos/imagenes/cargando.gif</file>
+    <file>../recursos/imagenes/deshacer.png</file>
+    <file>../recursos/imagenes/rehacer.png</file>
+    <file>../recursos/imagenes/minimizar.png</file>
   </qresource>
-  <qresource prefix="/ayuda">
+  <qresource prefix="ayuda">
     <file>../recursos/imagenes/ayuda_rcs/01_visor_inicio.png</file>
-    <file>../recursos/imagenes/ayuda_rcs/plg_modificar_color.png</file>
-    <file>../recursos/imagenes/ayuda_rcs/plg_grises.png</file>
     <file>../recursos/imagenes/ayuda_rcs/02_barra_de_menu.png</file>
     <file>../recursos/imagenes/ayuda_rcs/03_bh_plugins.png</file>
     <file>../recursos/imagenes/ayuda_rcs/04_visor_area_de_trabajo.png</file>
@@ -63,16 +65,20 @@
     <file>../recursos/imagenes/ayuda_rcs/logo_doclux.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_balancear_color.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_binarizar.png</file>
+    <file>../recursos/imagenes/ayuda_rcs/plg_binaryze.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_brillo.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_clean_bg_01.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_clean_bg_02.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_clean_bg_03.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_contraste.png</file>
+    <file>../recursos/imagenes/ayuda_rcs/plg_grises.png</file>
+    <file>../recursos/imagenes/ayuda_rcs/plg_modificar_color.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_negative.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_ocr_tesseract.png</file>
     <file>../recursos/imagenes/ayuda_rcs/plg_rotate_hrzt_vert.png</file>
     <file>../recursos/imagenes/ayuda_rcs/seleccion_img.png</file>
     <file>../recursos/imagenes/ayuda_rcs/visor_informacion_swap.png</file>
+    <file>../recursos/imagenes/ayuda_rcs/visor_inicio_(img_cargadas).jpg</file>
     <file>../recursos/imagenes/ayuda_rcs/visor_inicio_(img_cargadas).png</file>
   </qresource>
 </RCC>

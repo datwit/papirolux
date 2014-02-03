@@ -104,7 +104,7 @@
               <x>0</x>
               <y>0</y>
               <width>156</width>
-              <height>175</height>
+              <height>194</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -200,7 +200,7 @@
             <x>0</x>
             <y>0</y>
             <width>158</width>
-            <height>198</height>
+            <height>218</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -392,8 +392,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>611</width>
-                <height>425</height>
+                <width>623</width>
+                <height>462</height>
                </rect>
               </property>
               <layout class="QGridLayout" name="gridLayout_4">
@@ -423,7 +423,7 @@
      <x>0</x>
      <y>0</y>
      <width>801</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -432,11 +432,13 @@
     </property>
     <addaction name="actionNuevas"/>
     <addaction name="actionAdicionar"/>
+    <addaction name="actionAbrirProyecto"/>
     <addaction name="separator"/>
     <addaction name="actionGuardar"/>
     <addaction name="actionGuardarTodas"/>
     <addaction name="actionExportar"/>
     <addaction name="actionExportarTodas"/>
+    <addaction name="actionGuardarProyecto"/>
     <addaction name="separator"/>
     <addaction name="actionMinimizar"/>
     <addaction name="actionSalir"/>
@@ -446,11 +448,13 @@
      <string>Ayuda</string>
     </property>
     <addaction name="actionAcerca"/>
+    <addaction name="actionAyuda"/>
    </widget>
    <widget class="QMenu" name="menuHerramientas">
     <property name="title">
      <string>Herramientas</string>
     </property>
+    <addaction name="actionLimpiarAreaDeIntercambio"/>
     <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menuPlugins">
@@ -466,6 +470,7 @@
     <addaction name="actionRehacer"/>
     <addaction name="separator"/>
     <addaction name="actionEliminar"/>
+    <addaction name="actionEliminarTodas"/>
    </widget>
    <addaction name="menuArchivo"/>
    <addaction name="menuEditar"/>
@@ -491,6 +496,7 @@
    </attribute>
    <addaction name="actionNuevas"/>
    <addaction name="actionAdicionar"/>
+   <addaction name="actionAbrirProyecto"/>
   </widget>
   <widget class="QToolBar" name="toolBarProcesada">
    <property name="contextMenuPolicy">
@@ -509,9 +515,12 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionEliminar"/>
+   <addaction name="actionEliminarTodas"/>
    <addaction name="separator"/>
    <addaction name="actionDeshacer"/>
    <addaction name="actionRehacer"/>
+   <addaction name="separator"/>
+   <addaction name="actionGuardarProyecto"/>
    <addaction name="separator"/>
    <addaction name="actionGuardar"/>
    <addaction name="actionGuardarTodas"/>
@@ -561,7 +570,7 @@
   <action name="actionEliminar">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/delete_image.png</normaloff>:/imgs/recursos/imagenes/delete_image.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/delete_img.png</normaloff>:/imgs/recursos/imagenes/delete_img.png</iconset>
    </property>
    <property name="text">
     <string>Eliminar</string>
@@ -588,7 +597,7 @@
   <action name="actionExportar">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/exportar.png</normaloff>:/imgs/recursos/imagenes/exportar.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/save_one_pdf.png</normaloff>:/imgs/recursos/imagenes/save_one_pdf.png</iconset>
    </property>
    <property name="text">
     <string>Exportar actual</string>
@@ -600,7 +609,7 @@
   <action name="actionGuardar">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/guardar.png</normaloff>:/imgs/recursos/imagenes/guardar.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/save_img.png</normaloff>:/imgs/recursos/imagenes/save_img.png</iconset>
    </property>
    <property name="text">
     <string>Guardar actual</string>
@@ -612,7 +621,7 @@
   <action name="actionExportarTodas">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/exportar_todas.png</normaloff>:/imgs/recursos/imagenes/exportar_todas.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/save_all_pdf.png</normaloff>:/imgs/recursos/imagenes/save_all_pdf.png</iconset>
    </property>
    <property name="text">
     <string>Exportar todas</string>
@@ -624,7 +633,7 @@
   <action name="actionGuardarTodas">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/guardar_todas.png</normaloff>:/imgs/recursos/imagenes/guardar_todas.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/save_all_img.png</normaloff>:/imgs/recursos/imagenes/save_all_img.png</iconset>
    </property>
    <property name="text">
     <string>Guardar todas</string>
@@ -636,7 +645,7 @@
   <action name="actionNuevas">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/nuevas.png</normaloff>:/imgs/recursos/imagenes/nuevas.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/add_imgs.png</normaloff>:/imgs/recursos/imagenes/add_imgs.png</iconset>
    </property>
    <property name="text">
     <string>Nuevas</string>
@@ -645,7 +654,7 @@
   <action name="actionSalir">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/apagar.png</normaloff>:/imgs/recursos/imagenes/apagar.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/exit.png</normaloff>:/imgs/recursos/imagenes/exit.png</iconset>
    </property>
    <property name="text">
     <string>Salir</string>
@@ -654,7 +663,7 @@
   <action name="actionAdicionar">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/adicionar.png</normaloff>:/imgs/recursos/imagenes/adicionar.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/anex_imgs.png</normaloff>:/imgs/recursos/imagenes/anex_imgs.png</iconset>
    </property>
    <property name="text">
     <string>Adicionar</string>
@@ -663,10 +672,10 @@
   <action name="actionAcerca">
    <property name="icon">
     <iconset resource="recursos.qrc">
-     <normaloff>:/imgs/recursos/imagenes/docluxlogo.png</normaloff>:/imgs/recursos/imagenes/docluxlogo.png</iconset>
+     <normaloff>:/imgs/recursos/imagenes/about.png</normaloff>:/imgs/recursos/imagenes/about.png</iconset>
    </property>
    <property name="text">
-    <string>Acerca</string>
+    <string>Acerca de</string>
    </property>
    <property name="toolTip">
     <string>Acerca de</string>
@@ -679,6 +688,63 @@
    </property>
    <property name="text">
     <string>Minimizar</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/help.png</normaloff>:/imgs/recursos/imagenes/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+  </action>
+  <action name="actionEliminarTodas">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/delete_img_02.png</normaloff>:/imgs/recursos/imagenes/delete_img_02.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar todas</string>
+   </property>
+   <property name="toolTip">
+    <string>Eliminar todas</string>
+   </property>
+  </action>
+  <action name="actionAbrirProyecto">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/open_project_dlx.png</normaloff>:/imgs/recursos/imagenes/open_project_dlx.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir proyecto</string>
+   </property>
+   <property name="toolTip">
+    <string>Abrir proyecto .dlx</string>
+   </property>
+  </action>
+  <action name="actionGuardarProyecto">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/save_project.png</normaloff>:/imgs/recursos/imagenes/save_project.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar proyecto</string>
+   </property>
+   <property name="toolTip">
+    <string>Guardar proyecto .dlx</string>
+   </property>
+  </action>
+  <action name="actionLimpiarAreaDeIntercambio">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/clean_swap.png</normaloff>:/imgs/recursos/imagenes/clean_swap.png</iconset>
+   </property>
+   <property name="text">
+    <string>Limpiar área de intercambio</string>
+   </property>
+   <property name="toolTip">
+    <string>Limpiar área de intercambio</string>
    </property>
   </action>
  </widget>
