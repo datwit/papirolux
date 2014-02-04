@@ -5,9 +5,9 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
-from ui.ayuda import Ui_dlg_acerca_de
+from ui.ayuda import Ui_dlg_AyudaDocLux
 
-class Ayuda(QDialog, Ui_dlg_acerca_de):
+class Ayuda(QDialog, Ui_dlg_AyudaDocLux):
     def __init__(self, parent = None):
         super(Ayuda, self).__init__(parent)
         self.setupUi(self)

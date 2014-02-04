@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ayuda.ui'
 #
-# Created: Mon Feb  3 22:38:39 2014
+# Created: Tue Feb  4 09:53:27 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,182 +14,101 @@ try:
 except AttributeError:
     _fromUtf8 = lambda s: s
 
-class Ui_dlg_acerca_de(object):
-    def setupUi(self, dlg_acerca_de):
-        dlg_acerca_de.setObjectName(_fromUtf8("dlg_acerca_de"))
-        dlg_acerca_de.resize(871, 480)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/newPrefix/imagenes/logo_proyecto.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        dlg_acerca_de.setWindowIcon(icon)
-        self.gridLayout_2 = QtGui.QGridLayout(dlg_acerca_de)
+class Ui_dlg_AyudaDocLux(object):
+    def setupUi(self, dlg_AyudaDocLux):
+        dlg_AyudaDocLux.setObjectName(_fromUtf8("dlg_AyudaDocLux"))
+        dlg_AyudaDocLux.resize(869, 511)
+        self.gridLayout_2 = QtGui.QGridLayout(dlg_AyudaDocLux)
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
-        self.horizontalLayout_2 = QtGui.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
-        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
-        self.pushButton = QtGui.QPushButton(dlg_acerca_de)
-        self.pushButton.setObjectName(_fromUtf8("pushButton"))
-        self.horizontalLayout_2.addWidget(self.pushButton)
-        self.gridLayout_2.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
-        self.tabWidget = QtGui.QTabWidget(dlg_acerca_de)
-        self.tabWidget.setStyleSheet(_fromUtf8(""))
-        self.tabWidget.setUsesScrollButtons(True)
-        self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.verticalLayout = QtGui.QVBoxLayout()
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.tabWidget_Ayuda = QtGui.QTabWidget(dlg_AyudaDocLux)
+        self.tabWidget_Ayuda.setObjectName(_fromUtf8("tabWidget_Ayuda"))
         self.tab = QtGui.QWidget()
-        self.tab.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
         self.tab.setObjectName(_fromUtf8("tab"))
         self.gridLayout_3 = QtGui.QGridLayout(self.tab)
         self.gridLayout_3.setObjectName(_fromUtf8("gridLayout_3"))
-        self.horizontalLayout_3 = QtGui.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
-        spacerItem1 = QtGui.QSpacerItem(23, 141, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem1)
-        self.label = QtGui.QLabel(self.tab)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setMinimumSize(QtCore.QSize(224, 100))
-        self.label.setMaximumSize(QtCore.QSize(224, 100))
-        self.label.setStyleSheet(_fromUtf8("image: url(:/ayuda/recursos/imagenes/ayuda_rcs/logo_doclux.png);"))
-        self.label.setText(_fromUtf8(""))
-        self.label.setPixmap(QtGui.QPixmap(_fromUtf8(":/newPrefix/imagenes/logo_proyecto.png")))
-        self.label.setScaledContents(True)
-        self.label.setObjectName(_fromUtf8("label"))
-        self.horizontalLayout_3.addWidget(self.label)
-        spacerItem2 = QtGui.QSpacerItem(49, 141, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem2)
-        self.gridLayout_3.addLayout(self.horizontalLayout_3, 0, 0, 1, 1)
-        self.verticalLayout_3 = QtGui.QVBoxLayout()
-        self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
-        self.horizontalLayout_4 = QtGui.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName(_fromUtf8("horizontalLayout_4"))
-        spacerItem3 = QtGui.QSpacerItem(17, 64, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem3)
-        self.horizontalLayout = QtGui.QHBoxLayout()
-        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.verticalLayout = QtGui.QVBoxLayout()
-        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.label_2 = QtGui.QLabel(self.tab)
-        font = QtGui.QFont()
-        font.setFamily(_fromUtf8("Sans Serif"))
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_2.setFont(font)
-        self.label_2.setObjectName(_fromUtf8("label_2"))
-        self.verticalLayout.addWidget(self.label_2)
-        self.label_5 = QtGui.QLabel(self.tab)
-        font = QtGui.QFont()
-        font.setFamily(_fromUtf8("Sans Serif"))
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName(_fromUtf8("label_5"))
-        self.verticalLayout.addWidget(self.label_5)
-        self.label_7 = QtGui.QLabel(self.tab)
-        font = QtGui.QFont()
-        font.setFamily(_fromUtf8("Sans Serif"))
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_7.setFont(font)
-        self.label_7.setObjectName(_fromUtf8("label_7"))
-        self.verticalLayout.addWidget(self.label_7)
-        self.horizontalLayout.addLayout(self.verticalLayout)
-        self.verticalLayout_2 = QtGui.QVBoxLayout()
-        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
-        self.label_3 = QtGui.QLabel(self.tab)
-        self.label_3.setObjectName(_fromUtf8("label_3"))
-        self.verticalLayout_2.addWidget(self.label_3)
-        self.label_6 = QtGui.QLabel(self.tab)
-        self.label_6.setScaledContents(False)
-        self.label_6.setObjectName(_fromUtf8("label_6"))
-        self.verticalLayout_2.addWidget(self.label_6)
-        self.label_8 = QtGui.QLabel(self.tab)
-        self.label_8.setObjectName(_fromUtf8("label_8"))
-        self.verticalLayout_2.addWidget(self.label_8)
-        self.horizontalLayout.addLayout(self.verticalLayout_2)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout)
-        spacerItem4 = QtGui.QSpacerItem(18, 64, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem4)
-        self.verticalLayout_3.addLayout(self.horizontalLayout_4)
-        spacerItem5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_3.addItem(spacerItem5)
-        self.gridLayout_3.addLayout(self.verticalLayout_3, 1, 0, 1, 1)
-        self.tabWidget.addTab(self.tab, _fromUtf8(""))
-        self.tab_2 = QtGui.QWidget()
-        self.tab_2.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
-        self.tab_2.setObjectName(_fromUtf8("tab_2"))
-        self.gridLayout = QtGui.QGridLayout(self.tab_2)
-        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
-        self.textEdit = QtGui.QTextEdit(self.tab_2)
+        self.textEdit = QtGui.QTextEdit(self.tab)
         self.textEdit.setEnabled(True)
         self.textEdit.setFrameShape(QtGui.QFrame.NoFrame)
         self.textEdit.setFrameShadow(QtGui.QFrame.Plain)
         self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
-        self.gridLayout.addWidget(self.textEdit, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.tab_2, _fromUtf8(""))
-        self.tab_3 = QtGui.QWidget()
-        self.tab_3.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
-        self.tab_3.setObjectName(_fromUtf8("tab_3"))
-        self.gridLayout_4 = QtGui.QGridLayout(self.tab_3)
+        self.gridLayout_3.addWidget(self.textEdit, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab, _fromUtf8(""))
+        self.tab_2 = QtGui.QWidget()
+        self.tab_2.setObjectName(_fromUtf8("tab_2"))
+        self.gridLayout_4 = QtGui.QGridLayout(self.tab_2)
         self.gridLayout_4.setObjectName(_fromUtf8("gridLayout_4"))
-        self.textEdit_2 = QtGui.QTextEdit(self.tab_3)
+        self.textEdit_2 = QtGui.QTextEdit(self.tab_2)
         self.textEdit_2.setFrameShape(QtGui.QFrame.NoFrame)
         self.textEdit_2.setFrameShadow(QtGui.QFrame.Plain)
         self.textEdit_2.setReadOnly(True)
         self.textEdit_2.setObjectName(_fromUtf8("textEdit_2"))
         self.gridLayout_4.addWidget(self.textEdit_2, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.tab_3, _fromUtf8(""))
+        self.tabWidget_Ayuda.addTab(self.tab_2, _fromUtf8(""))
+        self.tab_3 = QtGui.QWidget()
+        self.tab_3.setObjectName(_fromUtf8("tab_3"))
+        self.gridLayout_5 = QtGui.QGridLayout(self.tab_3)
+        self.gridLayout_5.setObjectName(_fromUtf8("gridLayout_5"))
+        self.textEdit_3 = QtGui.QTextEdit(self.tab_3)
+        self.textEdit_3.setObjectName(_fromUtf8("textEdit_3"))
+        self.gridLayout_5.addWidget(self.textEdit_3, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab_3, _fromUtf8(""))
         self.tab_4 = QtGui.QWidget()
         self.tab_4.setObjectName(_fromUtf8("tab_4"))
-        self.textEdit_3 = QtGui.QTextEdit(self.tab_4)
-        self.textEdit_3.setGeometry(QtCore.QRect(0, 0, 831, 448))
-        self.textEdit_3.setObjectName(_fromUtf8("textEdit_3"))
-        self.tabWidget.addTab(self.tab_4, _fromUtf8(""))
+        self.gridLayout_6 = QtGui.QGridLayout(self.tab_4)
+        self.gridLayout_6.setObjectName(_fromUtf8("gridLayout_6"))
+        self.textEdit_4 = QtGui.QTextEdit(self.tab_4)
+        self.textEdit_4.setObjectName(_fromUtf8("textEdit_4"))
+        self.gridLayout_6.addWidget(self.textEdit_4, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab_4, _fromUtf8(""))
         self.tab_5 = QtGui.QWidget()
         self.tab_5.setObjectName(_fromUtf8("tab_5"))
-        self.textEdit_4 = QtGui.QTextEdit(self.tab_5)
-        self.textEdit_4.setGeometry(QtCore.QRect(0, 0, 831, 448))
-        self.textEdit_4.setObjectName(_fromUtf8("textEdit_4"))
-        self.tabWidget.addTab(self.tab_5, _fromUtf8(""))
+        self.gridLayout_7 = QtGui.QGridLayout(self.tab_5)
+        self.gridLayout_7.setObjectName(_fromUtf8("gridLayout_7"))
+        self.textEdit_5 = QtGui.QTextEdit(self.tab_5)
+        self.textEdit_5.setObjectName(_fromUtf8("textEdit_5"))
+        self.gridLayout_7.addWidget(self.textEdit_5, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab_5, _fromUtf8(""))
         self.tab_6 = QtGui.QWidget()
         self.tab_6.setObjectName(_fromUtf8("tab_6"))
-        self.textEdit_5 = QtGui.QTextEdit(self.tab_6)
-        self.textEdit_5.setGeometry(QtCore.QRect(0, 0, 831, 448))
-        self.textEdit_5.setObjectName(_fromUtf8("textEdit_5"))
-        self.tabWidget.addTab(self.tab_6, _fromUtf8(""))
-        self.tab_8 = QtGui.QWidget()
-        self.tab_8.setObjectName(_fromUtf8("tab_8"))
-        self.textEdit_7 = QtGui.QTextEdit(self.tab_8)
-        self.textEdit_7.setGeometry(QtCore.QRect(0, 0, 841, 391))
+        self.gridLayout_8 = QtGui.QGridLayout(self.tab_6)
+        self.gridLayout_8.setObjectName(_fromUtf8("gridLayout_8"))
+        self.textEdit_7 = QtGui.QTextEdit(self.tab_6)
         self.textEdit_7.setObjectName(_fromUtf8("textEdit_7"))
-        self.tabWidget.addTab(self.tab_8, _fromUtf8(""))
+        self.gridLayout_8.addWidget(self.textEdit_7, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab_6, _fromUtf8(""))
         self.tab_7 = QtGui.QWidget()
         self.tab_7.setObjectName(_fromUtf8("tab_7"))
+        self.gridLayout_9 = QtGui.QGridLayout(self.tab_7)
+        self.gridLayout_9.setObjectName(_fromUtf8("gridLayout_9"))
         self.textEdit_6 = QtGui.QTextEdit(self.tab_7)
-        self.textEdit_6.setGeometry(QtCore.QRect(0, 0, 831, 381))
         self.textEdit_6.setObjectName(_fromUtf8("textEdit_6"))
-        self.tabWidget.addTab(self.tab_7, _fromUtf8(""))
-        self.gridLayout_2.addWidget(self.tabWidget, 0, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.textEdit_6, 0, 0, 1, 1)
+        self.tabWidget_Ayuda.addTab(self.tab_7, _fromUtf8(""))
+        self.verticalLayout.addWidget(self.tabWidget_Ayuda)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.pushButton = QtGui.QPushButton(dlg_AyudaDocLux)
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.horizontalLayout_2.addWidget(self.pushButton)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
+        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
 
-        self.retranslateUi(dlg_acerca_de)
-        self.tabWidget.setCurrentIndex(0)
-        QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), dlg_acerca_de.close)
-        QtCore.QMetaObject.connectSlotsByName(dlg_acerca_de)
+        self.retranslateUi(dlg_AyudaDocLux)
+        self.tabWidget_Ayuda.setCurrentIndex(0)
+        QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), dlg_AyudaDocLux.close)
+        QtCore.QMetaObject.connectSlotsByName(dlg_AyudaDocLux)
 
-    def retranslateUi(self, dlg_acerca_de):
-        dlg_acerca_de.setWindowTitle(QtGui.QApplication.translate("dlg_acerca_de", "Ayuda", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton.setText(QtGui.QApplication.translate("dlg_acerca_de", "Aceptar", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_2.setText(QtGui.QApplication.translate("dlg_acerca_de", "Nombre:", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_5.setText(QtGui.QApplication.translate("dlg_acerca_de", "Versión:", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_7.setText(QtGui.QApplication.translate("dlg_acerca_de", "Fecha:", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_3.setText(QtGui.QApplication.translate("dlg_acerca_de", "Tratamiento de imágenes de archivos por lotes.", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_6.setText(QtGui.QApplication.translate("dlg_acerca_de", "3.0 \"Lista-Simple\"", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_8.setText(QtGui.QApplication.translate("dlg_acerca_de", "Enero, 2014", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QtGui.QApplication.translate("dlg_acerca_de", "Versión", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    def retranslateUi(self, dlg_AyudaDocLux):
+        dlg_AyudaDocLux.setWindowTitle(QtGui.QApplication.translate("dlg_AyudaDocLux", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -218,8 +137,8 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600; color:#000000;\">Barra de herramientas inferior:</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/ayuda/recursos/imagenes/ayuda_rcs/07_bh_inferior.png\" /></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Sans\'; font-size:10pt; color:#000000;\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QtGui.QApplication.translate("dlg_acerca_de", "Ayuda", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_2.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab), QtGui.QApplication.translate("dlg_AyudaDocLux", "Ayuda DocLux", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_2.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -314,8 +233,8 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta opción muestra la ayuda de DocLux; se explica el ambiente gráfico de la aplicación, así como cada una de las partes de la aplicación y cómo trabajar con ellas.</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Ubuntu\'; font-size:11pt;\"><br /></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Sans\'; font-size:10pt;\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QtGui.QApplication.translate("dlg_acerca_de", "Menú", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_3.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_2), QtGui.QApplication.translate("dlg_AyudaDocLux", "Menú", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_3.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -356,8 +275,8 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta opción permite minimizar la aplicación.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"section5\"></a><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">1</span><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">7. Salir.</span><span style=\" font-family:\'Sans\'; font-size:10pt;\"> </span><img src=\":/ayuda/recursos/imagenes/ayuda_rcs/btn_exit.png\" /></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Sans\'; font-size:10pt;\">Esta opción permite cerrar/salir la aplicación.</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QtGui.QApplication.translate("dlg_acerca_de", "Herramientas", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_4.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_3), QtGui.QApplication.translate("dlg_AyudaDocLux", "Herramientas", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_4.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -370,8 +289,8 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"section1\"></a><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">2</span><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">. </span><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600; color:#000000;\">Aplicar a todas: </span><img src=\":/ayuda/recursos/imagenes/ayuda_rcs/chekbox_aplicar_todas.png\" /></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Opción situada en la parte derecha inferior del área de trabajo, permite si está marcada que las transformaciones que sufra la imagen actual se le aplican a todas las cargadas al sistema, por el contrario de no estar marcada, los cambios sólo se aplican a la imagen actual.</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Ubuntu\'; font-size:11pt;\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), QtGui.QApplication.translate("dlg_acerca_de", "Trabajo", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_5.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_4), QtGui.QApplication.translate("dlg_AyudaDocLux", "Área de Trabajo", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_5.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -380,8 +299,8 @@ class Ui_dlg_acerca_de(object):
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">A continuación se explica la opción.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a name=\"section1\"></a><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">1</span><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">. </span><span style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:600;\">Imágenes cargadas</span><span style=\" font-family:\'Sans\'; font-size:10pt; font-weight:600;\">.</span><span style=\" font-family:\'Sans\'; font-size:10pt;\"> </span></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta área muestra en miniaturas cada una de las imágenes cargadas en el sistema, permitiendo seleccionar cuál de ellas se desea procesar y ser mostrada en el área de trabajo.</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), QtGui.QApplication.translate("dlg_acerca_de", "Imágenes cargadas", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_7.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_5), QtGui.QApplication.translate("dlg_AyudaDocLux", "Imágenes cargadas", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_7.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -392,8 +311,8 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta área muestra imágenes en miniaturas de cada una de las transformaciones que sufre la imagen actual que se muestra en el área de trabajo.</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:600;\">2. Botón Aplicar. </span><img src=\":/ayuda/recursos/imagenes/ayuda_rcs/btn_aplicar_(lista_comando).png\" /></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Este botón permite una vez seleccionada la imagen en miniatura deseada permite actualizar la imagen que se muestra en el área de trabajo con la transformación seleccionada y elemina las restantes transformaciones en la lista de comandos.</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), QtGui.QApplication.translate("dlg_acerca_de", "Lista de comandos", None, QtGui.QApplication.UnicodeUTF8))
-        self.textEdit_6.setHtml(QtGui.QApplication.translate("dlg_acerca_de", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_6), QtGui.QApplication.translate("dlg_AyudaDocLux", "Historial de cambios", None, QtGui.QApplication.UnicodeUTF8))
+        self.textEdit_6.setHtml(QtGui.QApplication.translate("dlg_AyudaDocLux", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
@@ -416,6 +335,7 @@ class Ui_dlg_acerca_de(object):
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta opción permite exportar la imagen actual mostrada/seleccionada, en formato *.pdf</span><span style=\" font-family:\'Sans\'; font-size:10pt;\">.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:600;\">7. Exportar todas. </span><img src=\":/ayuda/recursos/imagenes/ayuda_rcs/btn_save_all_pdf.png\" /></p>\n"
 "<p align=\"justify\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ubuntu\'; font-size:11pt;\">Esta opción permite exportar todas las imágenes en formato *.pdf</span><span style=\" font-family:\'Sans\'; font-size:10pt;\">.</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), QtGui.QApplication.translate("dlg_acerca_de", "Barra inferior", None, QtGui.QApplication.UnicodeUTF8))
+        self.tabWidget_Ayuda.setTabText(self.tabWidget_Ayuda.indexOf(self.tab_7), QtGui.QApplication.translate("dlg_AyudaDocLux", "Barra inferior", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton.setText(QtGui.QApplication.translate("dlg_AyudaDocLux", "Cerrar", None, QtGui.QApplication.UnicodeUTF8))
 
 import recursos_rc
