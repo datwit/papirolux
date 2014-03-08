@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'principal.ui'
 #
-# Created: Mon Feb  3 08:26:52 2014
+# Created: Fri Mar  7 22:26:19 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -286,6 +286,11 @@ class Ui_MainWindow(object):
         icon16.addPixmap(QtGui.QPixmap(_fromUtf8(":/imgs/recursos/imagenes/clean_swap.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionLimpiarAreaDeIntercambio.setIcon(icon16)
         self.actionLimpiarAreaDeIntercambio.setObjectName(_fromUtf8("actionLimpiarAreaDeIntercambio"))
+        self.actionGestionar_rea_de_intercambio = QtGui.QAction(MainWindow)
+        icon17 = QtGui.QIcon()
+        icon17.addPixmap(QtGui.QPixmap(_fromUtf8(":/imgs/recursos/imagenes/gest_swap.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionGestionar_rea_de_intercambio.setIcon(icon17)
+        self.actionGestionar_rea_de_intercambio.setObjectName(_fromUtf8("actionGestionar_rea_de_intercambio"))
         self.menuArchivo.addAction(self.actionNuevas)
         self.menuArchivo.addAction(self.actionAdicionar)
         self.menuArchivo.addAction(self.actionAbrirProyecto)
@@ -330,6 +335,7 @@ class Ui_MainWindow(object):
         self.toolBarProcesada.addAction(self.actionExportarTodas)
         self.toolBar.addAction(self.actionSalir)
         self.toolBar.addAction(self.actionMinimizar)
+        self.toolBar.addAction(self.actionGestionar_rea_de_intercambio)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -337,7 +343,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("MainWindow", "Imágenes cargadas", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_3.setText(QtGui.QApplication.translate("MainWindow", "Lista de comandos", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("MainWindow", "Historial de cambios", None, QtGui.QApplication.UnicodeUTF8))
         self.aplicarCmd.setText(QtGui.QApplication.translate("MainWindow", "Aplicar", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("MainWindow", "Imagen: ", None, QtGui.QApplication.UnicodeUTF8))
         self.indicadorOriginal.setText(QtGui.QApplication.translate("MainWindow", "0 de 0", None, QtGui.QApplication.UnicodeUTF8))
@@ -377,5 +383,7 @@ class Ui_MainWindow(object):
         self.actionGuardarProyecto.setToolTip(QtGui.QApplication.translate("MainWindow", "Guardar proyecto .dlx", None, QtGui.QApplication.UnicodeUTF8))
         self.actionLimpiarAreaDeIntercambio.setText(QtGui.QApplication.translate("MainWindow", "Limpiar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
         self.actionLimpiarAreaDeIntercambio.setToolTip(QtGui.QApplication.translate("MainWindow", "Limpiar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGestionar_rea_de_intercambio.setText(QtGui.QApplication.translate("MainWindow", "Gestionar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGestionar_rea_de_intercambio.setToolTip(QtGui.QApplication.translate("MainWindow", "Gestionar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
 
 import recursos_rc

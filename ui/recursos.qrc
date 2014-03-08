@@ -1,6 +1,8 @@
 <RCC>
   <qresource prefix="imgs">
+    <file>../recursos/imagenes/gest_swap.png</file>
     <file>../recursos/imagenes/about.png</file>
+    <file>../recursos/imagenes/minimizar.png</file>
     <file>../recursos/imagenes/add_imgs.png</file>
     <file>../recursos/imagenes/anex_imgs.png</file>
     <file>../recursos/imagenes/brithness.png</file>
@@ -11,7 +13,6 @@
     <file>../recursos/imagenes/deshacer.png</file>
     <file>../recursos/imagenes/exit.png</file>
     <file>../recursos/imagenes/help.png</file>
-    <file>../recursos/imagenes/minimizar.png</file>
     <file>../recursos/imagenes/open_imgs.png</file>
     <file>../recursos/imagenes/open_project_dlx.png</file>
     <file>../recursos/imagenes/rehacer.png</file>
@@ -23,7 +24,6 @@
     <file>../recursos/imagenes/cargando.gif</file>
     <file>../recursos/imagenes/deshacer.png</file>
     <file>../recursos/imagenes/rehacer.png</file>
-    <file>../recursos/imagenes/minimizar.png</file>
   </qresource>
   <qresource prefix="ayuda">
     <file>../recursos/imagenes/ayuda_rcs/01_visor_inicio.png</file>

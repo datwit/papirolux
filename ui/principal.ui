@@ -152,7 +152,7 @@
          <item>
           <widget class="QLabel" name="label_3">
            <property name="text">
-            <string>Lista de comandos</string>
+            <string>Historial de cambios</string>
            </property>
           </widget>
          </item>
@@ -561,6 +561,7 @@
    </attribute>
    <addaction name="actionSalir"/>
    <addaction name="actionMinimizar"/>
+   <addaction name="actionGestionar_rea_de_intercambio"/>
   </widget>
   <widget class="QStatusBar" name="statusBar">
    <property name="contextMenuPolicy">
@@ -745,6 +746,18 @@
    </property>
    <property name="toolTip">
     <string>Limpiar área de intercambio</string>
+   </property>
+  </action>
+  <action name="actionGestionar_rea_de_intercambio">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/imgs/recursos/imagenes/gest_swap.png</normaloff>:/imgs/recursos/imagenes/gest_swap.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gestionar área de intercambio</string>
+   </property>
+   <property name="toolTip">
+    <string>Gestionar área de intercambio</string>
    </property>
   </action>
  </widget>
