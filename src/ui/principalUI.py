@@ -102,6 +102,8 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
 
         # inicializar todo el resto de la app
         self.__inicializar()
+        # mostrar cantidad de imágenes cargadas(margen derecho)
+        self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas()))
 
 
     def __cargar_plugins(self):
@@ -233,6 +235,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         imagenes = QFileDialog.getOpenFileNames(self, u"Cargar Imágenes", QDir.homePath(), u"Imágenes (*.png *.jpg *.gif)")
 
         if len(imagenes) == 0:
+            self.__controladora.eliminar_imagenes()
             return
 
         # convertir de QStringList a python list sin repetidos
@@ -265,6 +268,8 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
             self.mostrar_imagen(self.__controladora.get_imagen_nro(self.__actualNro))
             self.__habilitar_controles_visor()
             self.__actualizar_miniaturas()
+            # actualizar cantidad de imágenes(margen derecho)
+            self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas()))
         else:
             # mostrar cartel con error
             pass
@@ -312,6 +317,8 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
             self.__actualizar_miniaturas()
             self.__habilitar_controles_visor()
             self.__actualizar_info_swap_status_bar()
+            # actualizar cantidad de imágenes(margen derecho)
+            self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas()))
         else:
             # mostrar cartel con error
             pass
@@ -720,12 +727,15 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
                 self.__mostrar_imagen(self.__actualNro)
                 # actualizar la barra de estado
                 self.__actualizar_info_swap_status_bar()
+
             else:
                 # inicializar todo
                 self.__inicializar()
         else:
             # mostrar cartel con error
             pass
+        # mostrar cantidad de imágenes cargadas(margen derecho)
+        self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas()))
 
 
     def __limpiar_miniaturas_comandos(self):
@@ -797,7 +807,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
             # reemplazando las direcciones anteriores de la swap en el process.code
             tmp_code = open(self.__controladora.get_swap_dir() + '/procesos.code','rb').read()
             indice_inicial_dir_swap = 0
-            indice_doclux_swap = tmp_code.index('/.doclux_swap')
+            indice_doclux_swap = tmp_code.index('/.' + appName + '/swap')
             for i in xrange(indice_doclux_swap - 1, 0, -1):
                 if tmp_code[i] == '/' and tmp_code[i-1] == "'":
                     indice_inicial_dir_swap = i-1
@@ -876,6 +886,8 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
                 else:
                     #cancelar
                     return
+        # actualizar cantidad de imágenes(margen derecho)
+        self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas())) 
     
     def __mostrar_cargando(self):
         '''

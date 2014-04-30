@@ -15,3 +15,4 @@ class Ayuda(QDialog, Ui_dlg_AyudaDocLux):
         self.setWindowTitle('Ayuda de DocLux')
 
         self.setWindowModality(Qt.ApplicationModal)
+        self.showMaximized()
