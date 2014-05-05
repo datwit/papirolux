@@ -227,19 +227,21 @@ class DocLux_Imagen:
         self.__miniatura = self.__constriur_miniatura()
 
 
-    def eliminar_img(self):
+    def eliminar_img(self, resetear=False):
+		'''
+        Elimina TODAS la copias de la imagen actual dentro de la swap MANTENIENDO
+        la original y su miniatura si lo que se quiere es resetear el proyecto
         '''
-        Elimina TODAS la copias de la imagen actual dentro de la swap
-        '''
-
-        # elimina todos los comandos y sus miniaturas
-        for i in self.get_comandos():
-            os.remove(i[1])
-            os.remove(i[2])
-
-        # limpiar la lista de comandos
-        self.__comandos = []
-
-        # elimina la imagen y su miniatura
-        os.remove(self.get_original())
-        os.remove(self.get_miniatura())
+		# elimina todos los comandos y sus miniaturas
+		for i in self.get_comandos():
+			os.remove(i[1])
+			os.remove(i[2])
+			# limpiar la lista de comandos
+			self.__comandos=[]
+			self.__comandos_deshechos=[]
+			if not resetear:
+				# elimina la imagen y su miniatura
+				os.remove(self.get_original())
+				os.remove(self.get_miniatura())
+			else:
+				self.__miniatura=self.__constriur_miniatura()

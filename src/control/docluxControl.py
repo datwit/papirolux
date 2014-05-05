@@ -232,6 +232,15 @@ class DocLux_Control:
         return self.__imgs_cargadas[i].puede_deshacer()
 
 
+    def resetear_proyecto(self):
+        '''
+        Retorna si se puede rehacer algun comando para la imagen i
+        '''
+
+        for i in self.__imgs_cargadas:
+			i.eliminar_img(True)
+    
+    
     def puede_rehacer(self, i):
         '''
         Retorna si se puede rehacer algun comando para la imagen i
@@ -277,6 +286,7 @@ class DocLux_Control:
             sgt = prioridad.get()
             lista_ordenada.append((sgt[1],str(sgt[0])))
         return lista_ordenada
+
 
 
     def informacion_swap(self):

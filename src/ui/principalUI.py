@@ -92,7 +92,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         self.actionGuardarProyecto.triggered.connect(self.__guardar_proyecto)
         #limpiar area intercambio
         self.actionLimpiarAreaDeIntercambio.triggered.connect(self.__limpiar)
-        self.actionEliminarTodas.triggered.connect(self.__limpiar)
+        self.actionEliminarTodas.triggered.connect(self.__eliminar_todas)
 
         # cargador
         self.__cargando = None
@@ -870,24 +870,45 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         '''
         
         if self.__controladora.get_cant_imagenes_cargadas()==0:
-            QMessageBox.information(self, u"Información", u"No es necesario limpiar la swap porque en estos momentos no contiene ninguna imagen")            
+            QMessageBox.information(self, u"Información", u"No es necesario resetear el proyecto actual")            
         else:
-            resp = QMessageBox.question(self, u'Pregunta', u' Debe guardar el proyecto antes de realizar esta acción, de lo contrario perderá todos los cambios realizados ¿ <b>Desea guardarlo</b>?',
+            resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta accion eliminara todos los comandos aplicados a las imagenes</b> y reiniciara el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
                                                QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
             #repuesta positiva
             if resp == QMessageBox.Yes:
-                self.__guardar_proyecto()
+				self.__controladora.resetear_proyecto()
+				self.__limpiar_miniaturas_comandos()
+				self.__limpiar_miniaturas()
+				self.__actualizar_miniaturas()
+				self.__mostrar_imagen(self.__actualNro)
             else:
                 #repuesta negativa
-                if resp == QMessageBox.No:
-                    self.__inicializar()
-                    self.__limpiar_miniaturas_comandos()
-                    self.__controladora.limpiar_swap()
-                else:
-                    #cancelar
-                    return
-        # actualizar cantidad de imágenes(margen derecho)
-        self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas())) 
+                return
+    
+    def __eliminar_todas(self):
+		
+        '''
+        limpia la swap sin necesidad de cerrar la aplicación
+        '''
+        if self.__controladora.get_cant_imagenes_cargadas()==0:
+            QMessageBox.information(self, u"Información", u"No es necesario resetear el proyecto actual")            
+        else:
+		resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta accion eliminara todos los comandos aplicados a las imagenes</b> y reiniciara el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
+										   QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
+		#repuesta positiva
+		if resp == QMessageBox.Yes:
+			self.__inicializar()
+			self.__limpiar_miniaturas_comandos()
+			self.__limpiar_miniaturas()
+			self.__controladora.limpiar_swap()
+			# mostrar cantidad de imágenes cargadas(margen derecho)
+			self.label_2.setText(u"Imágenes Cargadas:"+str(self.__controladora.get_cant_imagenes_cargadas()))
+
+		else:
+			#repuesta negativa
+			return
+    
+                
     
     def __mostrar_cargando(self):
         '''
