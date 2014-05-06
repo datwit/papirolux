@@ -10,6 +10,7 @@ import pickle
 
 from ui.principal import Ui_MainWindow
 from acercaUI import AcercaDe
+from swapUI import Swap
 from ayudaUI import Ayuda
 from cargandoUI import Cargando
 
@@ -90,6 +91,8 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         self.actionAbrirProyecto.triggered.connect(self.__abrir_proyecto)
         # guarar un proyecto creado en docLux
         self.actionGuardarProyecto.triggered.connect(self.__guardar_proyecto)
+        #gestionar swap
+        self.actionGestionar_rea_de_intercambio.triggered.connect(self.gestionar_swap)
         #limpiar area intercambio
         self.actionLimpiarAreaDeIntercambio.triggered.connect(self.__limpiar)
         self.actionEliminarTodas.triggered.connect(self.__eliminar_todas)
@@ -919,6 +922,31 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
 
         self.__cargando = Cargando(self)
         self.__cargando.show()
+    
+    
+    
+    
+    def gestionar_swap(self):
+        '''
+        Muestra el cuadro de diálogo para que la swap sea gestionada
+        '''
+
+        gestionar = Swap(self.__controladora.get_swap_dir(), self)
+        gestionar.terminado.connect(self.__gestionar_swap)
+        gestionar.show()
+    
+    
+    def __gestionar_swap(self, nueva_swap):
+        '''
+        Informa a la controladora que el usuario seleccionó un nuevo directorio para la swap
+        '''
+
+        if self.__controladora.get_swap_dir()== nueva_swap:
+			QMessageBox.information(self, u"Información", u" Ha seleccionado el directorio actual, seleccione un nuevo directorio")
+			return
+        else:
+			self.__controladora.actualizar_swap(str(nueva_swap))
+			QMessageBox.information(self, u"Información", u"OK, la nueva swap es: " + nueva_swap)
 
 
     def __ocultar_cargando(self, returnCode = -1):

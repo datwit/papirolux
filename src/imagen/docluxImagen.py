@@ -225,6 +225,19 @@ class DocLux_Imagen:
         self.__comandos_deshechos = []
         # actualizar la miniatura
         self.__miniatura = self.__constriur_miniatura()
+    
+    
+    
+    def actualizar_swap_img(self, nueva_swap):
+        '''
+        Actualiza la dirección de cada imagen para la nueva swap
+        '''
+
+        self.__swap= nueva_swap
+        if len(self.__comandos) > 0:
+			return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos)) + '.jpg'
+        else:
+			return self.__ruta
 
 
     def eliminar_img(self, resetear=False):
