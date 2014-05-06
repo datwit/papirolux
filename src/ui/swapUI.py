@@ -1,0 +1,54 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# main core file
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
+
+from ui.swap import Ui_dlg_swap
+
+class Swap(QDialog, Ui_dlg_swap):
+    # signal necesaria
+    terminado = pyqtSignal(str)
+    
+    def __init__(self, dir_swap, parent = None):
+        super(Swap, self).__init__(parent)
+        self.setupUi(self)
+
+        self.setWindowTitle(u'Gestión de la Swap')
+
+        self.setWindowModality(Qt.ApplicationModal)
+        
+        self.__swap = dir_swap
+        self.__nueva_swap = ''
+        
+        # mostar la dirección actual de la swap
+        self.swap_actual.setText(self.__swap)
+        
+        # boton buscar
+        self.dir_swap.clicked.connect(self.gestionar)
+        # boton guardar
+        self.aceptar.clicked.connect(self.guardar)
+        # boton cancelar
+        self.cancelar.clicked.connect(self.close)
+
+
+    def gestionar(self):
+        '''
+        Permite la selección de un nuevo directorio para la swap
+        '''
+        dirName = QFileDialog.getExistingDirectory(None, u"Seleccionar ubicación de la swap", QDir.homePath(), QFileDialog.ShowDirsOnly )
+        if dirName.isEmpty():
+            return
+        else:
+            self.__nueva_swap = str(dirName + '/.' + 'DocLux' + '/swap')
+            self.nueva_swap.setText(self.__nueva_swap)
+
+
+    def guardar(self):
+		'''
+		Emite la señal para informar que se seleccionó una nueva swap
+		'''
+		if self.nueva_swap.text().length() > 0:
+			self.terminado.emit(self.__nueva_swap)
+			
