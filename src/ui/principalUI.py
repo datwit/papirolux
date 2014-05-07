@@ -932,21 +932,32 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         '''
 
         gestionar = Swap(self.__controladora.get_swap_dir(), self)
+        # se captura la señal sobre la nueva swap y el nuevo directorio
+		# se le envía esa información al metodo __gestionar_swap
         gestionar.terminado.connect(self.__gestionar_swap)
         gestionar.show()
     
     
-    def __gestionar_swap(self, nueva_swap):
+    def __gestionar_swap(self, nueva_swap, nuevo_dir_swap):
         '''
         Informa a la controladora que el usuario seleccionó un nuevo directorio para la swap
         '''
-
-        if self.__controladora.get_swap_dir()== nueva_swap:
-			QMessageBox.information(self, u"Información", u" Ha seleccionado el directorio actual, seleccione un nuevo directorio")
-			return
+        # comprobar si el nuevo directorio es válido
+        if os.path.isdir(nuevo_dir_swap):
+			if self.__controladora.get_swap_dir()== nueva_swap:
+				QMessageBox.information(self, u"Información", u" Ha seleccionado el directorio actual, seleccione un nuevo directorio")
+				return
+			# si ya existe una swap en ese directorio
+			elif os.path.exists(nueva_swap):
+				QMessageBox.information(self, u"Información", u" Ya existe una swap en ese directorio, debe seleccionar otro directorio o borrar la swap existente en el mismo.")
+				return
+			else:
+				self.__controladora.actualizar_swap(str(nueva_swap))
+				QMessageBox.information(self, u"Información", u"OK, la nueva swap es: " + nueva_swap)
         else:
-			self.__controladora.actualizar_swap(str(nueva_swap))
-			QMessageBox.information(self, u"Información", u"OK, la nueva swap es: " + nueva_swap)
+			QMessageBox.information(self, u"Información", u" Debe seleccionar un directorio válido para realizar esta acción.")
+			return
+			
 
 
     def __ocultar_cargando(self, returnCode = -1):

@@ -257,9 +257,6 @@ class DocLux_Control:
         '''
         import shutil
         import os.path
-		# Si ya existe el directorio nuevo se elimina
-        if os.path.exists(nueva_swap):
-			shutil.rmtree(nueva_swap)
 		#copia el directorio actual para el nuevo directorio
         swap_actual = self.get_swap_dir()
         shutil.copytree(str(swap_actual),str(nueva_swap))
@@ -269,8 +266,7 @@ class DocLux_Control:
         for i in self.__imgs_cargadas:
 			i.actualizar_swap_img(str(nueva_swap))
         
-        
-		
+    	
 
     def eliminar_comandos_despues_de(self, i, j):
         '''
