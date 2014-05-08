@@ -455,6 +455,7 @@
      <string>Herramientas</string>
     </property>
     <addaction name="actionLimpiarAreaDeIntercambio"/>
+    <addaction name="actionGestionar_rea_de_intercambio"/>
     <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menuPlugins">
