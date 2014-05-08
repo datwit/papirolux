@@ -810,7 +810,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
             # reemplazando las direcciones anteriores de la swap en el process.code
             tmp_code = open(self.__controladora.get_swap_dir() + '/procesos.code','rb').read()
             indice_inicial_dir_swap = 0
-            indice_doclux_swap = tmp_code.index('/.' + appName + '/swap')
+            indice_doclux_swap = tmp_code.index('/.DocLux/swap')
             for i in xrange(indice_doclux_swap - 1, 0, -1):
                 if tmp_code[i] == '/' and tmp_code[i-1] == "'":
                     indice_inicial_dir_swap = i-1
