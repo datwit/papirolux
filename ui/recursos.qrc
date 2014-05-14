@@ -26,6 +26,8 @@
     <file>../recursos/imagenes/rehacer.png</file>
   </qresource>
   <qresource prefix="ayuda">
+    <file>../recursos/imagenes/ayuda_rcs/gest_swap.png</file>
+    <file>../recursos/imagenes/ayuda_rcs/013_vtn_gestion_swap.png</file>
     <file>../recursos/imagenes/ayuda_rcs/01_visor_inicio.png</file>
     <file>../recursos/imagenes/ayuda_rcs/02_barra_de_menu.png</file>
     <file>../recursos/imagenes/ayuda_rcs/03_bh_plugins.png</file>
