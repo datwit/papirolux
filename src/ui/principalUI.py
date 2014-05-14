@@ -875,7 +875,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         if self.__controladora.get_cant_imagenes_cargadas()==0:
             QMessageBox.information(self, u"Información", u"No es necesario resetear el proyecto actual")            
         else:
-            resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta accion eliminara todos los comandos aplicados a las imagenes</b> y reiniciara el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
+            resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta acción eliminará todos los comandos aplicados a las imágenes</b> y reiniciará el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
                                                QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
             #repuesta positiva
             if resp == QMessageBox.Yes:
@@ -896,7 +896,7 @@ class VentanaPrincipal(QMainWindow, Ui_MainWindow):
         if self.__controladora.get_cant_imagenes_cargadas()==0:
             QMessageBox.information(self, u"Información", u"No es necesario resetear el proyecto actual")            
         else:
-		resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta accion eliminara todos los comandos aplicados a las imagenes</b> y reiniciara el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
+		resp = QMessageBox.question(self, u'Pregunta', u'<b>Esta acción eliminará todos los comandos aplicados a las imágenes</b> y reiniciará el proyecto actual. ¿Esta seguro que es eso lo que desea hacer?',
 										   QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
 		#repuesta positiva
 		if resp == QMessageBox.Yes:
