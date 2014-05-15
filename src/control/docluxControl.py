@@ -265,8 +265,9 @@ class DocLux_Control:
         # se le cambia la dirección de cada imagen
         for i in self.__imgs_cargadas:
 			i.actualizar_swap_img(str(nueva_swap))
-        
-    	
+		# eliminar todo el contenido del area de trabajo antigua
+        for i in os.listdir(swap_actual):
+            os.remove(swap_actual + '/' + i)
 
     def eliminar_comandos_despues_de(self, i, j):
         '''
