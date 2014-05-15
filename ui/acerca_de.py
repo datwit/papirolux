@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'acerca_de.ui'
 #
-# Created: Thu May  8 09:21:54 2014
+# Created: Thu May 15 10:53:53 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!

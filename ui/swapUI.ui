@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Directorio de la Swap DocLux</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</iconset>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="1" column="0">
     <widget class="QLabel" name="label_4">
@@ -108,7 +112,9 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>cancelar</sender>

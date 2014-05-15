@@ -1,27 +1,26 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'swap.ui'
+# Form implementation generated from reading ui file 'swapUI.ui'
 #
-# Created: Mon Mar  3 10:32:42 2014
+# Created: Thu May 15 10:55:25 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
-import sys
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
 
 from PyQt4 import QtCore, QtGui
-from src.control.docluxControl import DocLux_Control
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
     _fromUtf8 = lambda s: s
 
-class Ui_dlg_swap(object):
+class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(486, 184)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Form.setWindowIcon(icon)
         self.gridLayout = QtGui.QGridLayout(Form)
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.label_4 = QtGui.QLabel(Form)
@@ -74,4 +73,5 @@ class Ui_dlg_swap(object):
         self.aceptar.setText(QtGui.QApplication.translate("Form", "Guardar", None, QtGui.QApplication.UnicodeUTF8))
         self.cancelar.setText(QtGui.QApplication.translate("Form", "Cancelar", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("Form", "Nueva swap:", None, QtGui.QApplication.UnicodeUTF8))
-       
+
+import recursos_rc

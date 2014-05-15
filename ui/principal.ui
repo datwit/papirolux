@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_8">
     <item row="0" column="1">

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'cargando.ui'
 #
-# Created: Thu Jan 30 10:52:51 2014
+# Created: Thu May 15 10:54:22 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -18,6 +18,9 @@ class Ui_Cargando(object):
     def setupUi(self, Cargando):
         Cargando.setObjectName(_fromUtf8("Cargando"))
         Cargando.resize(224, 68)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Cargando.setWindowIcon(icon)
         self.gridLayout = QtGui.QGridLayout(Cargando)
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
