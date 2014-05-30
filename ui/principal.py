@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'principal.ui'
 #
-# Created: Thu May 15 10:54:34 2014
+# Created: Thu May 29 21:02:35 2014
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -362,32 +362,50 @@ class Ui_MainWindow(object):
         self.toolBarProcesada.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Herramientas", None, QtGui.QApplication.UnicodeUTF8))
         self.toolBar.setWindowTitle(QtGui.QApplication.translate("MainWindow", "toolBar", None, QtGui.QApplication.UnicodeUTF8))
         self.actionEliminar.setText(QtGui.QApplication.translate("MainWindow", "Eliminar", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionEliminar.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+E", None, QtGui.QApplication.UnicodeUTF8))
         self.actionDeshacer.setText(QtGui.QApplication.translate("MainWindow", "Deshacer", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionDeshacer.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Z", None, QtGui.QApplication.UnicodeUTF8))
         self.actionRehacer.setText(QtGui.QApplication.translate("MainWindow", "Rehacer", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionRehacer.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Y", None, QtGui.QApplication.UnicodeUTF8))
         self.actionExportar.setText(QtGui.QApplication.translate("MainWindow", "Exportar actual", None, QtGui.QApplication.UnicodeUTF8))
         self.actionExportar.setToolTip(QtGui.QApplication.translate("MainWindow", "Exportar actual", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionExportar.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+E", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardar.setText(QtGui.QApplication.translate("MainWindow", "Guardar actual", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardar.setToolTip(QtGui.QApplication.translate("MainWindow", "Guardar actual", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGuardar.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+G", None, QtGui.QApplication.UnicodeUTF8))
         self.actionExportarTodas.setText(QtGui.QApplication.translate("MainWindow", "Exportar todas", None, QtGui.QApplication.UnicodeUTF8))
         self.actionExportarTodas.setToolTip(QtGui.QApplication.translate("MainWindow", "Exportar todas", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionExportarTodas.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+E", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardarTodas.setText(QtGui.QApplication.translate("MainWindow", "Guardar todas", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardarTodas.setToolTip(QtGui.QApplication.translate("MainWindow", "Guardar todas", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGuardarTodas.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+G", None, QtGui.QApplication.UnicodeUTF8))
         self.actionNuevas.setText(QtGui.QApplication.translate("MainWindow", "Nuevas", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionNuevas.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+N", None, QtGui.QApplication.UnicodeUTF8))
         self.actionSalir.setText(QtGui.QApplication.translate("MainWindow", "Salir", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSalir.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Q", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAdicionar.setText(QtGui.QApplication.translate("MainWindow", "Adicionar", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAdicionar.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+A", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAcerca.setText(QtGui.QApplication.translate("MainWindow", "Acerca de", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAcerca.setToolTip(QtGui.QApplication.translate("MainWindow", "Acerca de", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAcerca.setShortcut(QtGui.QApplication.translate("MainWindow", "F2", None, QtGui.QApplication.UnicodeUTF8))
         self.actionMinimizar.setText(QtGui.QApplication.translate("MainWindow", "Minimizar", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionMinimizar.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+M", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAyuda.setText(QtGui.QApplication.translate("MainWindow", "Ayuda", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAyuda.setShortcut(QtGui.QApplication.translate("MainWindow", "F1", None, QtGui.QApplication.UnicodeUTF8))
         self.actionEliminarTodas.setText(QtGui.QApplication.translate("MainWindow", "Eliminar todas", None, QtGui.QApplication.UnicodeUTF8))
         self.actionEliminarTodas.setToolTip(QtGui.QApplication.translate("MainWindow", "Eliminar todas", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionEliminarTodas.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+E", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAbrirProyecto.setText(QtGui.QApplication.translate("MainWindow", "Abrir proyecto", None, QtGui.QApplication.UnicodeUTF8))
         self.actionAbrirProyecto.setToolTip(QtGui.QApplication.translate("MainWindow", "Abrir proyecto .dlx", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAbrirProyecto.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+O", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardarProyecto.setText(QtGui.QApplication.translate("MainWindow", "Guardar proyecto", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGuardarProyecto.setToolTip(QtGui.QApplication.translate("MainWindow", "Guardar proyecto .dlx", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGuardarProyecto.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+O", None, QtGui.QApplication.UnicodeUTF8))
         self.actionLimpiarAreaDeIntercambio.setText(QtGui.QApplication.translate("MainWindow", "Limpiar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
         self.actionLimpiarAreaDeIntercambio.setToolTip(QtGui.QApplication.translate("MainWindow", "Limpiar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionLimpiarAreaDeIntercambio.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+L", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGestionar_rea_de_intercambio.setText(QtGui.QApplication.translate("MainWindow", "Gestionar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
         self.actionGestionar_rea_de_intercambio.setToolTip(QtGui.QApplication.translate("MainWindow", "Gestionar área de intercambio", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionGestionar_rea_de_intercambio.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Shift+L", None, QtGui.QApplication.UnicodeUTF8))
 
 import recursos_rc
