@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</normaloff>:/ayuda/recursos/imagenes/ayuda_rcs/icon_doclux.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_8">
     <item row="0" column="1">
@@ -577,6 +581,9 @@
    <property name="text">
     <string>Eliminar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
   </action>
   <action name="actionDeshacer">
    <property name="icon">
@@ -586,6 +593,9 @@
    <property name="text">
     <string>Deshacer</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionRehacer">
    <property name="icon">
@@ -594,6 +604,9 @@
    </property>
    <property name="text">
     <string>Rehacer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
   <action name="actionExportar">
@@ -607,6 +620,9 @@
    <property name="toolTip">
     <string>Exportar actual</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
   </action>
   <action name="actionGuardar">
    <property name="icon">
@@ -618,6 +634,9 @@
    </property>
    <property name="toolTip">
     <string>Guardar actual</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
    </property>
   </action>
   <action name="actionExportarTodas">
@@ -631,6 +650,9 @@
    <property name="toolTip">
     <string>Exportar todas</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
   </action>
   <action name="actionGuardarTodas">
    <property name="icon">
@@ -643,6 +665,9 @@
    <property name="toolTip">
     <string>Guardar todas</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
+   </property>
   </action>
   <action name="actionNuevas">
    <property name="icon">
@@ -651,6 +676,9 @@
    </property>
    <property name="text">
     <string>Nuevas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
   </action>
   <action name="actionSalir">
@@ -661,6 +689,9 @@
    <property name="text">
     <string>Salir</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
   </action>
   <action name="actionAdicionar">
    <property name="icon">
@@ -669,6 +700,9 @@
    </property>
    <property name="text">
     <string>Adicionar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
    </property>
   </action>
   <action name="actionAcerca">
@@ -682,6 +716,9 @@
    <property name="toolTip">
     <string>Acerca de</string>
    </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
   </action>
   <action name="actionMinimizar">
    <property name="icon">
@@ -691,6 +728,9 @@
    <property name="text">
     <string>Minimizar</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
   </action>
   <action name="actionAyuda">
    <property name="icon">
@@ -699,6 +739,9 @@
    </property>
    <property name="text">
     <string>Ayuda</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
    </property>
   </action>
   <action name="actionEliminarTodas">
@@ -712,6 +755,9 @@
    <property name="toolTip">
     <string>Eliminar todas</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
   </action>
   <action name="actionAbrirProyecto">
    <property name="icon">
@@ -723,6 +769,9 @@
    </property>
    <property name="toolTip">
     <string>Abrir proyecto .dlx</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionGuardarProyecto">
@@ -736,6 +785,9 @@
    <property name="toolTip">
     <string>Guardar proyecto .dlx</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
   </action>
   <action name="actionLimpiarAreaDeIntercambio">
    <property name="icon">
@@ -748,6 +800,9 @@
    <property name="toolTip">
     <string>Limpiar área de intercambio</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
   </action>
   <action name="actionGestionar_rea_de_intercambio">
    <property name="icon">
@@ -759,6 +814,9 @@
    </property>
    <property name="toolTip">
     <string>Gestionar área de intercambio</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
    </property>
   </action>
  </widget>

@@ -260,13 +260,13 @@ class DocLux_Control:
 		#copia el directorio actual para el nuevo directorio
         swap_actual = self.get_swap_dir()
         shutil.copytree(str(swap_actual),str(nueva_swap))
+        self.limpiar_swap()
         #actualizar la swap
         self.__swap= nueva_swap
         # se le cambia la dirección de cada imagen
         for i in self.__imgs_cargadas:
 			i.actualizar_swap_img(str(nueva_swap))
-        
-    	
+
 
     def eliminar_comandos_despues_de(self, i, j):
         '''

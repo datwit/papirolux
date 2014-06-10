@@ -5,9 +5,9 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
-from ui.swap import Ui_dlg_swap
+from ui.swap import Ui_Form
 
-class Swap(QDialog, Ui_dlg_swap):
+class Swap(QDialog, Ui_Form):
     # signal necesaria
     terminado = pyqtSignal(str,str)
     
