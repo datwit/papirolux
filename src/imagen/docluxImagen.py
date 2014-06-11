@@ -35,7 +35,7 @@ class DocLux_Imagen:
         # nombre (sin extension)
         self.__nombre = str(os.path.splitext(os.path.basename(imgURL))[0])
         # copiar la imagen al area de intercambio
-        salida = self.__swap + '/' + self.__nombre + '.jpg'
+        salida = self.__swap + '/' + self.__nombre + '.png'
         tmp = Image.open(imgURL.decode('L1'))
         # ajuste del ancho
         if tmp.size[0] > ancho_maximo:
@@ -56,7 +56,7 @@ class DocLux_Imagen:
         '''
 
         if len(self.__comandos) > 0:
-            return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos)) + '.jpg'
+            return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos)) + '.png'
         else:
             return self.__ruta
 
@@ -85,7 +85,7 @@ class DocLux_Imagen:
         - swapDir/miniatura_NOMBRE.jpg
         '''
 
-        salida = self.__swap + '/' + 'miniatura_' + self.__nombre + '.jpg'
+        salida = self.__swap + '/' + 'miniatura_' + self.__nombre + '.png'
         im = Image.open(self.get_original())
         im.thumbnail(miniatura_size)
         im.save(salida.decode('L1'))
@@ -185,7 +185,7 @@ class DocLux_Imagen:
         transformacion
         '''
 
-        return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos) + 1) + '.jpg'
+        return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos) + 1) + '.png'
 
 
     def get_comandos(self):
@@ -197,10 +197,10 @@ class DocLux_Imagen:
         salida = []
         i = 0
         while i < len(self.__comandos):
-            cmd_url = self.__swap + '/' + self.__nombre + '_' + str(i + 1) + '.jpg'
+            cmd_url = self.__swap + '/' + self.__nombre + '_' + str(i + 1) + '.png'
             im = Image.open(cmd_url)
             im.thumbnail(miniatura_size)
-            cmd_miniatura = self.__swap + '/' + self.__nombre + '_miniatura_' + str(i + 1) + '.jpg'
+            cmd_miniatura = self.__swap + '/' + self.__nombre + '_miniatura_' + str(i + 1) + '.png'
             im.save(cmd_miniatura)
             salida.append((self.__comandos[i], cmd_url, cmd_miniatura))
             i = i + 1
@@ -213,7 +213,7 @@ class DocLux_Imagen:
         Retorna el estado del comando cmd_nro
         '''
 
-        return self.__swap + '/' + self.__nombre + '_' + str(cmd_nro + 1) + '.jpg'
+        return self.__swap + '/' + self.__nombre + '_' + str(cmd_nro + 1) + '.png'
 
 
     def eliminar_comandos_despues_de(self, cmd_nro):
@@ -235,7 +235,7 @@ class DocLux_Imagen:
 
         self.__swap= nueva_swap
         if len(self.__comandos) > 0:
-			return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos)) + '.jpg'
+			return self.__swap + '/' + self.__nombre + '_' + str(len(self.__comandos)) + '.png'
         else:
 			return self.__ruta
 
