@@ -335,3 +335,41 @@ class DocLux_Control:
             total_swap = round(float(total_swap / 1000), 1)
 
         return (str(cant), (str(total_swap), um), str(free_ok))
+    
+    
+    def informacion_directorios(self, directorio):
+        '''
+        Calcula la informacion relacionada con la swap
+        '''
+
+        # obtener la informacion
+        st = os.statvfs(str(directorio))
+
+        # espacio libre en Gb (dividir 3 veces x 1000)
+        free = st.f_bavail * st.f_frsize
+        free_ok = round(float(free / 1000) / 1000 / 1000, 1)
+
+        for root, dirs, files in os.walk(str(directorio)):
+            cant = len(files)
+            usado = sum(os.path.getsize(os.path.join(root, name)) for name in files)
+
+        # UM del contenido de la swap (Kb o Mb)
+        um = 'Kb'
+        # en Kb (dividir 2 veces x 1000)
+        total_swap = round(float(usado / 1000), 1)
+
+        # llevar a Mb si es necesario
+        if total_swap > 1023:
+            um = 'Mb'
+            total_swap = round(float(total_swap / 1000), 1)
+
+        return (str(cant), (str(total_swap), um), str(free_ok))
+   
+   
+    
+
+
+        
+    
+    
+    
