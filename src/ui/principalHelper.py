@@ -124,7 +124,7 @@ class GuardarExportarImagenes(QtCore.QThread):
         if not self.__exportar:
             for i in self.__listaImgs:
                 # intentar copiar los archivos al directorio de salida
-                if not QtCore.QFile.copy(i[0], self.__dir + '/' + i[1] + '.jpg'):
+                if not QtCore.QFile.copy(i[0], self.__dir + '/' + i[1] + '.png'):
                     # marcador de errores
                     result = False
         else:
