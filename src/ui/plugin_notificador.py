@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # auxiliares del plugin
-from PyQt4 import QtCore
+from PyQt5 import QtCore
+from PyQt5 import QtGui
 
 class Notificador(QtCore.QObject):
     '''
-    Sirve para notificar a la aplicacion principal el
-    estado de una operacion para mostrar los mensajes
-    correspondientes
+    Sirve para notificar a la aplicacion principal que ya termino
+    una operacion y asi poder actualizar la ventana
     '''
 
     # en caso de operacion con exito
@@ -19,13 +19,16 @@ class Notificador(QtCore.QObject):
     error = QtCore.pyqtSignal(str)
     # se usara en caso de tener interfaz grafica
     parent = None
-    # notificar el inicio de una operacion
-    # al emitirse esta signal se debera mostrar la
-    # ventana cargando
-    inicio_operacion = QtCore.pyqtSignal()
-    # notificar el fin de una operacion
-    # al emitirse esta signal se debera ocultar la
-    # ventana cargando
-    fin_operacion = QtCore.pyqtSignal()
 
     pass
+
+
+# notificador = Notificador()
+# emitir una notificacion con la siguiente linea cada vez que se
+# realice una modificacion correcta, especificando los parametros
+#
+# notificador.correcto.emit(nombre())
+#
+# o esta linea en caso de errores
+#
+# notificador.error.emit('mensaje de error')
