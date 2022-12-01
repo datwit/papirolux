@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import plugin_base
+from .plugin_base import *
 import os
 import imp
 
@@ -27,4 +27,4 @@ def cargar_plugins(pluginsdir = 'plugins'):
                 continue
 
     # retornar la lista de plugins cargados ordenada por el nombre
-    return sorted(plugin_base.plugins_list, cmp=criterio)
+    return sorted(plugins_list)
