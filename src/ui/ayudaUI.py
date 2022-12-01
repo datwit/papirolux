@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # main core file
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 
 from ui.ayuda import Ui_dlg_AyudaDocLux
 
