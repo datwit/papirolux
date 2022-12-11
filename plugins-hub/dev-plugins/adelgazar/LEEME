@@ -1,0 +1,30 @@
+Plugin:  < Adelgazar >
+
+Autor:  < Ibrahan Rojas salinas > 
+
+Dependencias: < Image
+                           cv2
+                           scipy
+                           numpy
+
+Otros aspectos: < Las imágenes a las que se le aplicará la funcionalidad deben estar  limpias y binarizadas >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

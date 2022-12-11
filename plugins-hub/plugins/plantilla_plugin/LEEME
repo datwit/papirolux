@@ -1,0 +1,10 @@
+Plugin: <especificar el nombre del plugin>
+Autores: <especificar el nombre de los autores>
+
+Dependencias: <especificar el nombre exacto de los paquetes necesarios
+               para el correcto funcionamiento del plugin, colocados
+               uno en cada linea>
+
+Otros aspectos: <especificar cualquier otro aspecto que desee en forma de
+                 parrafo a continuacion>
+

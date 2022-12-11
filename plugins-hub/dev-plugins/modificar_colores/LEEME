@@ -1,0 +1,7 @@
+Plugin: Para modificar el RGB de las imágenes
+
+Autores: Ing. Yuniel Guzmán Bazán
+
+Dependencias: python-pythonmagick (Object-oriented Python interface to ImageMagick)
+
+Otros aspectos:

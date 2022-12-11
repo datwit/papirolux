@@ -1,0 +1,8 @@
+Plugin: Para rotar las imágenes a la izquierda (90 grados)
+
+Autores: Ing. Yuniel Guzmán Bazán
+
+Dependencias: python-imaging (PIL)
+
+Otros aspectos: 
+

@@ -1,0 +1,7 @@
+Plugin: Para hacer zoom-menos (zoomOut) en las imágenes
+
+Autores: Ing. Yuniel Guzmán Bazán
+
+Dependencias: python-imaging (PIL)
+
+Otros aspectos: 
