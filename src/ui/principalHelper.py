@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # main core file
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui
 
 # cada clase define un HILO para realizar un procedimiento determinado
 # y una SIGNAL para indicar que termino el proceso, a esta SIGNAL se

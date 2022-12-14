@@ -3,7 +3,7 @@
 
 # main core file
 #~ from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtGui import *
 
 # auxiliar para las actions de los Plugins
 class MyQAction(QAction):

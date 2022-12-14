@@ -4,11 +4,19 @@
 import sys
 
 # import PyQt4 QtCore and QtGui modules
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QApplication
+import os
 
-appName = "DocLux"
-appVersion = "3.0"
+appName = "papirolux"
+appVersion = "0.4a"
+
+from src.ui.principalUI import VentanaPrincipal
+
+def quit(self):
+    self.commTerminate()
+    QApplication.quit()
 
 if __name__ == '__main__':
     # create application
@@ -16,13 +24,9 @@ if __name__ == '__main__':
     app.setApplicationName(appName)
 
     # preparar el area de intercambio (debe ser configurable)
-    swap_dir = QDir.toNativeSeparators(QDir.homePath() + '/.' + appName + '/swap')
+    swap_dir = QDir.toNativeSeparators(os.path.join(QDir.homePath(), appName, 'swap'))
     swap = QDir()
     swap.mkpath(swap_dir)
-
-    # importar la ventana principal, es necesario el import aqui despues de
-    # creada la QApplicarion
-    from src.ui.principalUI import VentanaPrincipal
 
     # create widget
     w = VentanaPrincipal(str(swap_dir))
@@ -30,7 +34,7 @@ if __name__ == '__main__':
     w.show()
 
     # connection
-    QObject.connect(app, SIGNAL('lastWindowClosed()'), app, SLOT('quit()'))
+    app.quit()
 
     # execute application
     sys.exit(app.exec_())
